@@ -11,12 +11,16 @@ import java.util.List;
 @Service
 public class JugadorServiceImplement implements JugadorService {
 
+    private final JugadorRepository jugadorRepository;
+
     @Autowired
-    private JugadorRepository jugadorRepository;
+    public JugadorServiceImplement(JugadorRepository jugadorRepository) {
+        this.jugadorRepository = jugadorRepository;
+    }
 
     @Override
     public Jugador crearJugador(Jugador jugador) {
-        return jugadorRepository.save(jugador);
+        return null;
     }
 
     @Override

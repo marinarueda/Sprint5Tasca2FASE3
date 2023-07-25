@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JugadorRepository extends JpaRepository<Jugador, Integer> {
-    boolean existsByNom(String nom);
-}
 
+}
